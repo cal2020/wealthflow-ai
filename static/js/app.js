@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
   renderChart();
   updateCountdown();
   setInterval(updateCountdown, 1000);
+
+  // Set deployment timestamp
+  const now = new Date();
+  document.getElementById('deployTime').textContent = now.toLocaleString();
+
   addManagerMessage("Welcome! I'm Victoria Sterling, your Chief Investment Officer. I've assembled a team of expert advisors to help deploy your $600,000 investment by February 1, 2026. Click 'Consult Team' to receive our comprehensive strategy.");
   
   document.getElementById('consultBtn').addEventListener('click', runConsultation);

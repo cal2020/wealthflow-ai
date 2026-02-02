@@ -452,6 +452,21 @@ body {
   color: var(--accent-primary);
 }
 
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 13px;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer #deployTime {
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
