@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WealthFlow AI - Investment Advisory Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">WealthFlow<span class="ai">AI</span></span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#" class="nav-item active"><span class="icon">📊</span> Dashboard</a>
+        <a href="#" class="nav-item"><span class="icon">👥</span> Advisors</a>
+        <a href="#" class="nav-item"><span class="icon">💼</span> Portfolio</a>
+        <a href="#" class="nav-item"><span class="icon">📈</span> Markets</a>
+        <a href="#" class="nav-item"><span class="icon">⚙️</span> Settings</a>
+      </nav>
+      <div class="investment-goal">
+        <h4>Investment Goal</h4>
+        <div class="goal-amount">$600,000</div>
+        <div class="goal-date">Deploy by Feb 1, 2026</div>
+        <div class="countdown" id="countdown"></div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="header">
+        <h1>Investment Advisory Dashboard</h1>
+        <div class="header-actions">
+          <button class="btn btn-primary" id="consultBtn">🤖 Consult Team</button>
+        </div>
+      </header>
+
+      <!-- Stats Cards -->
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Total Investment</div>
+          <div class="stat-value">$600,000</div>
+          <div class="stat-change positive">Ready to deploy</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Risk Profile</div>
+          <div class="stat-value" id="riskProfile">Moderate</div>
+          <div class="stat-change">Balanced approach</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Time Horizon</div>
+          <div class="stat-value" id="timeHorizon">--</div>
+          <div class="stat-change">Until deployment</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Active Advisors</div>
+          <div class="stat-value">5</div>
+          <div class="stat-change positive">All online</div>
+        </div>
+      </section>
+
+      <!-- Main Grid -->
+      <div class="dashboard-grid">
+        <!-- Allocation Chart -->
+        <section class="card allocation-card">
+          <h3>Recommended Allocation</h3>
+          <div class="chart-container">
+            <canvas id="allocationChart"></canvas>
+          </div>
+        </section>
+
+        <!-- Advisor Panel -->
+        <section class="card advisors-card">
+          <h3>Advisory Team</h3>
+          <div class="advisors-list" id="advisorsList"></div>
+        </section>
+
+        <!-- Chat Interface -->
+        <section class="card chat-card">
+          <h3>💬 Manager Briefing</h3>
+          <div class="chat-messages" id="chatMessages"></div>
+          <div class="chat-input-container">
+            <input type="text" id="chatInput" placeholder="Ask the financial manager...">
+            <button class="btn btn-send" id="sendBtn">→</button>
+          </div>
+        </section>
+
+        <!-- Recommendations -->
+        <section class="card recommendations-card">
+          <h3>📋 Investment Recommendations</h3>
+          <div class="recommendations-list" id="recommendationsList"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
