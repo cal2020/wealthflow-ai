@@ -18,6 +18,8 @@ AI-powered Financial Advisory Platform for deploying $600K investment by Feb 1, 
 
 This site automatically deploys to GitHub Pages when commits are pushed to the `main` branch.
 
+**Live Site:** https://cal2020.github.io/wealthflow-ai/
+
 ### Setup GitHub Pages (one-time)
 1. Go to your repository Settings
 2. Navigate to Pages (under "Code and automation")
